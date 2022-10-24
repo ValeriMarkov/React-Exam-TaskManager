@@ -1,0 +1,127 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
+   box-sizing: border-box;
+   list-style: none;
+}
+
+body {
+   padding: 40px 0;
+   height: 100%;
+   width: 100%;
+   background-image: url("https://cutewallpaper.org/21/todo-list-wallpaper/6-Steps-to-Finish-Your-To-Do-List-Grant-Cardone-TV.jpg");
+}
+
+.container {
+   padding: 23px;
+   background: rgb(106, 79, 79);
+   background: linear-gradient(90deg, rgba(106, 79, 79, 1) 0%, rgba(102, 67, 67, 1) 49%, rgba(106, 71, 71, 1) 88%);
+   border: 3px solid rgb(0, 0, 0);
+   max-width: 600px;
+   margin: 0 auto;
+   margin-top: 40px;
+}
+
+input:not([type="checkbox"]),
+textarea {
+   height: 40px;
+   width: 100%;
+   border: 1px solid #5a5a5a;
+   border-radius: 0;
+   padding: 0 10px;
+}
+
+textarea {
+   height: 70px;
+   resize: none;
+   padding: 10px;
+}
+
+button {
+   height: 40px;
+   padding: 20px 10px;
+   margin-left: 10px;
+   background-color: #704e27;
+   color: rgb(255, 255, 255);
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.row {
+   display: flex;
+   width: 100%;
+   margin-bottom: 15px;
+}
+
+.col {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-right: 10px;
+}
+
+ul.tabs {
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+ul.list {
+   cursor: pointer;
+   justify-content: space-between;
+}
+
+.edit {
+   color: rgba(255, 68, 0, 0.827);
+   margin-left: 1px;
+}
+
+.delete {
+   color: red;
+   margin-left: 1px;
+}
+
+.description {
+   color: rgb(255, 132, 0);
+   margin-left: 1px;
+}
+
+p {
+   padding-left: 75px;
+   color: whitesmoke;
+}
+
+.status {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+   font-size: 25px;
+   list-style-type: none;
+   padding: 0;
+   text-shadow: -1px -2px 2px whitesmoke;
+}
+
+.top {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 38%;
+}
+
+.links {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.names {
+   color: whitesmoke;
+}
+
+.error {
+   align-items: center;
+   margin-left: 30%;
+   color: black;
+}
