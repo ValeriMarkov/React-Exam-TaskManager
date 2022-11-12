@@ -32,16 +32,17 @@ const Tasks = () => {
 
     function getTaskValues() {
         const storedTasks = JSON.parse(localStorage.getItem('tasks'));
-        if (!storedTasks) return {
-            name: '',
-            description: '',
-            priority: '',
-            deadline: '',
-            completed: false,
-            visibleDescription: false
-        };
-        return storedTasks;
-    }
+        if (!storedTasks) {
+            return {
+                tasks: [],
+                newTask,
+                editMode: false,
+                activeTabId: 0
+            }
+        }
+        else 
+            return storedTasks;
+        }
 
     const handleAdd = () => {
         setEditMode(false)

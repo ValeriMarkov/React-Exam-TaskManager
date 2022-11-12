@@ -34,13 +34,18 @@ const App = () => {
 
     function getProjectValues() {
         const storedProjects = JSON.parse(localStorage.getItem('projects'));
-        if (!storedProjects) return {
-            name: '',
-            description: '',
-            visibleDescription: false
-        };
-        return storedProjects;
-    }
+        if (!storedProjects) {
+            return {
+                projects: [],
+                newProject,
+                editMode: false,
+                activeTabId: 0
+            }
+        }
+        else 
+            return storedProjects;
+        }
+    
 
     const handleAdd = () => {
         setEditMode(false)
